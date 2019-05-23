@@ -1,0 +1,41 @@
+ion-content {
+  background: #872175 !important;
+  text-align: center;
+}
+
+.labelLogin {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffd100;
+}
+
+.headerLogin {
+  color: #ffd100;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #630448;
+  margin: 20px 0 20px;
+}
+
+.appIconLog {
+  padding: 60px 0 15px;
+}
+
+.has-icon .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-icon .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
