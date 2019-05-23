@@ -13,15 +13,11 @@ export class ButtonComponent implements OnInit {
   @Input() icon: string = "";
   @Input() name: string = "";
 
-  //salidas
-  @Output() onClick = new EventEmitter<any>();
+
 
   constructor() {}
 
   ngOnInit() {}
 
-  onClickButton(event) {
-    console.log("componente button");
-    this.onClick.emit(event);
-  }
+
 }

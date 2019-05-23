@@ -11,9 +11,7 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {}
 
-  login(event: any, form: any) {
-    console.log("componente usuario:  " + form.user);
-    console.log("componente password:  " + form.password);
-    console.log("login", event);
+  login(form: any) {
+    console.log("validamos usuario:  " + form.user + "   y  password: " + form.password); 
   }
 }

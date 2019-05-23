@@ -12,7 +12,7 @@
       <app-input ngModel type="password" icon="fas fa-key" name="password" placeholder="Contraseña"></app-input>
     </div>
     <app-button
-      (onClick)="login($event, loginForm.value)"
+      (click)="login(loginForm.value)"
       name="Iniciar Sesión"
       icon="fa fa-unlock"
       [disabled]="!loginForm.value.user || !loginForm.value.password"
