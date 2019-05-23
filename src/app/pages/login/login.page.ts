@@ -12,6 +12,7 @@ export class LoginPage implements OnInit {
   ngOnInit() {}
 
   login(form: any) {
-    console.log("validamos usuario:  " + form.user + "   y  password: " + form.password); 
+    console.log("validamos usuario:  " + form.user + "   y  password: " + form.password);
+    this.router.navigate(["/payment"]);
   }
 }
