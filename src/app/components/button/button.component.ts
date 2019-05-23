@@ -9,7 +9,7 @@ export class ButtonComponent implements OnInit {
   //entradas
   @Input() id: string = "";
   @Input() type: string = "button";
-  @Input() disabled: boolean = false;
+  @Input() disabled: boolean = true;
   @Input() icon: string = "";
   @Input() name: string = "";
 

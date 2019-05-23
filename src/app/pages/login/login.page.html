@@ -2,7 +2,7 @@
   <img src="assets/img/appIcon.png" class="appIconLog" />
   <div class="headerLogin">Iniciar Sesión</div>
 
-  <form name="frmLogin" class="container" #loginForm="ngForm">
+  <form name="frmLogin" class="container" ngNativeValidate #loginForm="ngForm">
     <div class="form-group, labelLogin">Usuario</div>
     <div class="form-group">
       <app-input ngModel type="text" icon="fa fa-user" name="user" placeholder="Usuario"></app-input>
@@ -11,6 +11,11 @@
     <div class="form-group">
       <app-input ngModel type="password" icon="fas fa-key" name="password" placeholder="Contraseña"></app-input>
     </div>
-    <app-button (onClick)="login($event, loginForm.value)" name="Iniciar Sesión" icon="fa fa-unlock"></app-button>
+    <app-button
+      (onClick)="login($event, loginForm.value)"
+      name="Iniciar Sesión"
+      icon="fa fa-unlock"
+      [disabled]="!loginForm.value.user || !loginForm.value.password"
+    ></app-button>
   </form>
 </ion-content>
