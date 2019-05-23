@@ -11,41 +11,6 @@
     <div class="form-group">
       <app-input type="password" icon="fas fa-key" name="password" placeholder="Contraseña"></app-input>
     </div>
-    <button id="sss" type="button" className="buttonFmb btn btn-primary btn-lg btn-block " disabled="false">
-      <i className="fa fa-unlock"></i>
-      Iniciar Sesión
-    </button>
-    <!-- <div class="row">
-      <div class="col">
-        <button routerLink="/tabs" type="submit" id="btnLogin" class="button button-fdlm button-block">
-          <i class="icon ion-unlocked"></i> Iniciar Sesión
-        </button>
-      </div>
-    </div> -->
+    <app-button (onClick)="login($event)" name="Iniciar Sesión"  icon="fa fa-unlock"></app-button>
   </form>
 </ion-content>
-<!-- 
-<ion-content class="padding">
-  <img src="img/appIcon.png" class="appIconLog" />
-
-  <div class="headerLogin">Iniciar Sesión</div>
-
-  <form ng-submit="iniciarSesion()" name="frmLogin" novalidate="" class="padding">
-    <label>Usuario</label>
-
-    <label class="item item-input">
-      <i class="icon ion-person placeholder-icon"></i>
-      <input type="text" ng-model="usuario.nombreUsuario" placeholder="Nombre de Usuario" required />
-    </label>
-
-    <label>Contraseña</label>
-
-    <label class="item item-input">
-      <i class="icon ion-lock-combination placeholder-icon"></i>
-      <input type="password" ng-model="usuario.clave" placeholder="Contraseña" required ng-minlength="1" />
-    </label>
-    <button type="submit" id="btnLogin" class="button button-fdlm button-block" ng-disabled="frmLogin.$error.required">
-      <i class="icon ion-unlocked"></i> Iniciar Sesión
-    </button>
-  </form>
-</ion-content> -->
