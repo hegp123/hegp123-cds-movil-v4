@@ -19,7 +19,7 @@ import { states, State } from "./states";
     </select>
   `
 })
-
+// https://blog.angulartraining.com/tutorial-custom-form-controls-with-angular-22fc31c8c4cc
 //  <form #form="ngForm">
 // <state-selector name="state" ngModel #state="ngModel"></state-selector>
 // <button type="button" (click)="logForm(form.value)">Submit</button>
