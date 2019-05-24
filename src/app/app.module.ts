@@ -14,7 +14,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { APP_ROUTES } from "./app.routes";
 
 //MODULOS
-import { PagesModule } from "./pages/pages.module";
+import { TabsModule } from "./pages/tabs.module";
 
 //COMPONENTES
 import { LoginPage } from "./login/login.page";
@@ -25,7 +25,7 @@ import { ButtonComponent } from "./components/button/button.component";
 @NgModule({
   declarations: [AppComponent, LoginPage, InputComponent, ButtonComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), NgbModule.forRoot(), APP_ROUTES, PagesModule, FormsModule, ReactiveFormsModule],
+  imports: [BrowserModule, IonicModule.forRoot(), NgbModule.forRoot(), APP_ROUTES, TabsModule, FormsModule, ReactiveFormsModule],
   providers: [StatusBar, SplashScreen, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent]
 })

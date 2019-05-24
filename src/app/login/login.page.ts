@@ -14,6 +14,6 @@ export class LoginPage implements OnInit {
   login(form: any) {
     console.log("validamos usuario:  " + form.user + "   y  password: " + form.password);
     // this.router.navigate(["/payment"]);
-    this.router.navigate(["/promesas"]);
+    this.router.navigate(["/tabs"]);
   }
 }
