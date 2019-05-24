@@ -12,13 +12,13 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 //submodulos
 import { ComponentsModule } from "./components/components.module";
-import { SharedModule } from "./pages/shared/shared.module";
+import { PagesModule } from "./pages/pages.module";
 // import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgbModule.forRoot(), ComponentsModule, SharedModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgbModule.forRoot(), ComponentsModule, PagesModule],
   providers: [StatusBar, SplashScreen, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent]
 })
