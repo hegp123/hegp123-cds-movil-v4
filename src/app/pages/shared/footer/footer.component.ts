@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./footer.component.scss"]
 })
 export class FooterComponent implements OnInit {
-  @Input() type: string = "payment";
+  @Input() tabName: string = "";
 
   payment: string = "assets/img/registrarPago.png";
   print: string = "assets/img/reimpFactura.png";
@@ -26,12 +26,12 @@ export class FooterComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.paymentImg = this.type === "payment" ? this.paymentAct : this.payment;
-    this.printImg = this.type === "print" ? this.printAct : this.print;
-    this.reportImg = this.type === "report" ? this.reportAct : this.report;
+    this.paymentImg = this.tabName === "payment" ? this.paymentAct : this.payment;
+    this.printImg = this.tabName === "print" ? this.printAct : this.print;
+    this.reportImg = this.tabName === "report" ? this.reportAct : this.report;
 
-    this.paymentText = this.type === "payment" ? "textEnabled" : "textDisabled";
-    this.printText = this.type === "print" ? "textEnabled" : "textDisabled";
-    this.reportText = this.type === "report" ? "textEnabled" : "textDisabled";
+    this.paymentText = this.tabName === "payment" ? "textEnabled" : "textDisabled";
+    this.printText = this.tabName === "print" ? "textEnabled" : "textDisabled";
+    this.reportText = this.tabName === "report" ? "textEnabled" : "textDisabled";
   }
 }
