@@ -1,3 +1,4 @@
+import { RouterModule } from "@angular/router";
 import { NgModule } from "@angular/core";
 import { IonicModule } from "@ionic/angular";
 import { CommonModule } from "@angular/common";
@@ -9,6 +10,6 @@ import { HeaderComponent } from "./header/header.component";
 @NgModule({
   declarations: [HeaderComponent, FooterComponent],
   exports: [HeaderComponent, FooterComponent],
-  imports: [CommonModule, IonicModule, FormsModule]
+  imports: [CommonModule, IonicModule, FormsModule, RouterModule]
 })
 export class SharedModule {}

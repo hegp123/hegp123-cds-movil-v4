@@ -1,5 +1,5 @@
-import { TAB_NAME_PAYMENT } from "./../../../Constants/Constants";
 import { Component, OnInit } from "@angular/core";
+import { TAB_NAME_PAYMENT } from "src/app/Constants/Constants";
 
 @Component({
   selector: "app-payment",
