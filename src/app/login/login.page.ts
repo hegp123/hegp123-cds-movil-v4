@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter, Input } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 
 @Component({
@@ -13,6 +13,7 @@ export class LoginPage implements OnInit {
 
   login(form: any) {
     console.log("validamos usuario:  " + form.user + "   y  password: " + form.password);
-    this.router.navigate(["/payment"]);
+    // this.router.navigate(["/payment"]);
+    this.router.navigate(["/promesas"]);
   }
 }

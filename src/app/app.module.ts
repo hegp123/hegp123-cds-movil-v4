@@ -7,18 +7,25 @@ import { SplashScreen } from "@ionic-native/splash-screen/ngx";
 import { StatusBar } from "@ionic-native/status-bar/ngx";
 
 import { AppComponent } from "./app.component";
-import { AppRoutingModule } from "./app-routing.module";
+// import { AppRoutingModule } from "./app-routing.module";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
-//submodulos
-import { ComponentsModule } from "./components/components.module";
+//RUTAS
+import { APP_ROUTES } from "./app.routes";
+
+//MODULOS
 import { PagesModule } from "./pages/pages.module";
-// import { FormsModule } from "@angular/forms";
+
+//COMPONENTES
+import { LoginPage } from "./login/login.page";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { InputComponent } from "./components/input/input.component";
+import { ButtonComponent } from "./components/button/button.component";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LoginPage, InputComponent, ButtonComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgbModule.forRoot(), ComponentsModule, PagesModule],
+  imports: [BrowserModule, IonicModule.forRoot(), NgbModule.forRoot(), APP_ROUTES, PagesModule, FormsModule, ReactiveFormsModule],
   providers: [StatusBar, SplashScreen, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent]
 })
