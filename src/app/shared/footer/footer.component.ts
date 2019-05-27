@@ -23,7 +23,9 @@ export class FooterComponent implements OnInit {
   printText: string;
   reportText: string;
 
-  constructor() {}
+  constructor() {
+    console.log("Este no lo estamos utilizando para nada.... fue reemplazado por el footer implicito de tabs");
+  }
 
   ngOnInit() {
     this.paymentImg = this.tabName === "payment" ? this.paymentAct : this.payment;
