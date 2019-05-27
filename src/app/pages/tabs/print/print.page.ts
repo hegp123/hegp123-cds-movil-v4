@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { TAB_NAME_PRINT } from "src/app/Constants/Constants";
+import { TAB_NAME_PRINT } from "src/app/constants/Constants";
 
 @Component({
   selector: "app-print",

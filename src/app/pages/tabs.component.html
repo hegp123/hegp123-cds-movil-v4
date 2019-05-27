@@ -1,23 +1,30 @@
-<ion-tabs>
-  <ion-tab-bar slot="bottom" color="">
-    <ion-tab-button tab="payment">
-      <ion-icon name="home"></ion-icon>
-      <ion-label>Registrar Pago</ion-label>
-    </ion-tab-button>
+<ion-tabs (ionTabsDidChange)="tabChange($event)">
+  <div>
+    <ion-tab-bar slot="bottom" color="" mode="md">
+      <ion-tab-button tab="payment">
+        <!-- <ion-icon name="home"></ion-icon> -->
+        <ion-icon src="{{ paymentAct }}" *ngIf="selectTab === 'payment'"></ion-icon>
+        <ion-icon src="{{ payment }}" *ngIf="selectTab !== 'payment'"></ion-icon>
+        <ion-label>Pago</ion-label>
+      </ion-tab-button>
 
-    <ion-tab-button tab="report">
-      <ion-icon name="apps"></ion-icon>
-      <ion-label>Reporte de Pagos</ion-label>
-    </ion-tab-button>
+      <ion-tab-button tab="report">
+        <ion-icon src="{{ reportAct }}" *ngIf="selectTab === 'report'"></ion-icon>
+        <ion-icon src="{{ report }}" *ngIf="selectTab !== 'report'"></ion-icon>
+        <ion-label>Reporte</ion-label>
+      </ion-tab-button>
 
-    <ion-tab-button tab="print">
-      <ion-icon name="print"></ion-icon>
-      <ion-label>Reimprimir Orden</ion-label>
-    </ion-tab-button>
+      <ion-tab-button tab="print">
+        <ion-icon src="{{ printAct }}" *ngIf="selectTab === 'print'"></ion-icon>
+        <ion-icon src="{{ print }}" *ngIf="selectTab !== 'print'"></ion-icon>
+        <ion-label>Reimprimir</ion-label>
+      </ion-tab-button>
 
-    <ion-tab-button tab="other-concept">
-      <ion-icon name="settings"></ion-icon>
-      <ion-label>Otros Conceptos</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
+      <ion-tab-button tab="other-concept">
+        <ion-icon src="{{ otherConceptAct }}" *ngIf="selectTab === 'other-concept'"></ion-icon>
+        <ion-icon src="{{ otherConcept }}" *ngIf="selectTab !== 'other-concept'"></ion-icon>
+        <ion-label>Otros Conceptos</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </div>
 </ion-tabs>

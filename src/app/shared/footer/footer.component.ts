@@ -8,12 +8,12 @@ import { Component, OnInit, Input } from "@angular/core";
 export class FooterComponent implements OnInit {
   @Input() tabName: string = "";
 
-  payment: string = "assets/img/registrarPago.png";
-  print: string = "assets/img/reimpFactura.png";
+  payment: string = "assets/img/registrarPago_36.png";
+  paymentAct: string = "assets/img/registrarPagoAct_36.png";
   report: string = "assets/img/reportePagos.png";
-  paymentAct: string = "assets/img/registrarPagoAct.png";
-  printAct: string = "assets/img/reimpFacturaAct.png";
   reportAct: string = "assets/img/reportePagosAct.png";
+  print: string = "assets/img/reimpFactura.png";
+  printAct: string = "assets/img/reimpFacturaAct.png";
 
   paymentImg: string;
   printImg: string;

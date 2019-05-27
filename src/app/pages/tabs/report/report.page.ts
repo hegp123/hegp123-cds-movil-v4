@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { TAB_NAME_REPORT } from "src/app/Constants/Constants";
+import { TAB_NAME_REPORT } from "src/app/constants/Constants";
 
 @Component({
   selector: "app-report",
